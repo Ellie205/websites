@@ -10,6 +10,7 @@
         }
         table{
             border: 3px solid #000;
+            border-collapse: collapse;
         }
         td, th{
             border: 1px solid #000;
@@ -17,45 +18,61 @@
             margin: 4px;
             text-align: center;
         }
+        tr:first-child th{
+            background-color: lightgrey;
+        }
+        tr:first-child th:first-child{
+            background-color: #FFF;
+        }
+        .column-width200{
+            width: 200px;
+        }
+        .column-width100{
+            width: 100px;
+        }
+        .groen{
+            background-color: lightgreen;
+        }
+        .rood{
+            background-color: darkred;
+        }
     </style>
 </head>
 <body>
     <table>
         <caption>Aantal koppen koffie per persoon</caption>
         <tr>
-            <th><img src="koffie.jpg" alt="Illustratie van een kop koffie"></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th rowspan="5">
+                <img src="koffie.jpg" alt="Illustratie van een kop koffie">
+            </th>
+            <th>Naam</th>
+            <th>Aantal koppen</th>
+            <th>Type</th>
+            <th>Suiker</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="column-width200">Jasper Vervliet</td>
+            <td class="column-width200">10</td>
+            <td class="column-width100">Zo zwart mogelijk</td>
+            <td class="column-width100 groen">Ja</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="column-width200">Maaike Van den Bulck</td>
+            <td class="column-width200 groen">15</td>
+            <td class="column-width100">Normaal</td>
+            <td class="column-width100 rood">Nee</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Nele Beerten</td>
+            <td class="rood">0</td>
+            <td>Deca</td>
+            <td class="groen">Ja</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Anja Raymaekers</td>
+            <td>6</td>
+            <td>Normaal</td>
+            <td class="groen">Ja</td>
         </tr>
     </table>
 </body>
