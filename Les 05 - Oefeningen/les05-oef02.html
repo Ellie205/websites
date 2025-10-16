@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+        }
+        form{
+            width: 50%;
+        }
+        input{
+            width: 100%;
+            box-shadow: 5px 5px lightgrey;
+            border-radius: 15px;
+            font-size: 20px;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+        <div>
+            <label for="voornaam">Voornaam:</label>
+        </div>
+        <div>
+            <input type="text" name="voornaam" id="voornaam" placeholder="Stijn">
+        </div>
+        <div>
+            <label for="naam">Familienaam:</label>
+        </div>
+        <div>
+            <input type="text" name="naam" id="naam" placeholder="Lenaerts">
+        </div>
+        <div>
+            <label for="email">Gebruikersnaam:</label>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="mail@thomasmore.be">
+        </div>
+        <div>
+            <label for="bijnaam">Nickname:</label>
+        </div>
+        <div>
+            <input type="text" name="bijnaam" id="bijnaam" placeholder="Nickname" minlength="5" maxlength="15" required>
+        </div>
+        <div>
+            <label for="wachtwoord">Paswoord:</label>
+        </div>
+        <div>
+            <input type="password" name="wachtwoord" id="wachtwoord" placeholder="Paswoord" required>
+        </div>
+        <div>
+            <label for="herhaal-wachtwoord">Heraal paswoord:</label>
+        </div>
+        <div>
+            <input type="password" name="herhaal-wachtwoord" id="herhaal-wachtwoord" placeholder="Herhaal paswoord" required>
+        </div>
+        <div>
+            <input type="submit" value="Registreren">
+        </div>
+    </form>
+</body>
+</html>
