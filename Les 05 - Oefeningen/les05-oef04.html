@@ -8,11 +8,58 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        form{
+            width: 20%;
+        }
+        label{
+            font-size: 18px;
+        }
+        input, select{
+            box-shadow: 5px 5px lightgrey;
+            padding: 6px 10px;
+            font-size: 18px;
+            background-color: #d34909;
+            color: white;
+            width: 100%;
+            margin: 5px 0;
+        }
+        input::placeholder{
+            color: lightgrey;
+        }
     </style>
 </head>
 <body>
-    <form action="">
-        
+    <form action="https://tm-statweb.be/forms.php" method="post">
+        <div>
+            <label for="voornaam">Voornaam:</label>
+        </div>
+        <div>
+            <input type="text" placeholder="Voornaam" name="voornaam" id="voornaam">
+        </div>
+        <div>
+            <label for="familienaam">Familienaam:</label>
+        </div>
+        <div>
+            <input type="text" placeholder="Familienaam" name="familienaam" id="familienaam">
+        </div>
+        <div>
+            <label for="merk">Kies een auto:</label>
+        </div>
+        <div>
+            <select name="merk" id="merk">
+                <option value=""></option>
+                <option value="ford">Ford</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="volvo">Volvo</option>
+                <option value="skoda">Skoda</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Registreren">
+        </div>
     </form>
 </body>
 </html>
