@@ -1,0 +1,21 @@
+body{
+    background-color: gray;
+}
+.witte-div{
+    background-color: white;
+    height: 300px;
+    width: 50%;
+    padding: 5px;
+}
+.rode-div{
+    background-color: red;
+    height: 200px;
+    width: 75%;
+    padding: 5px;
+}
+.text-div{
+    background-color: yellow;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+}

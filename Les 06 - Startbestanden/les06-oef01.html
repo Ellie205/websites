@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        body{
+            background: url("kompas.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        div{
+            color: #FFF;
+            font-family: "Indie Flower", sans-serif;
+            font-size: 28px;
+            position: fixed;
+        }
+        .noord{
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .oost{
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        .zuid{
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .west{
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="noord">Noord</div>
+    <div class="oost">Oost</div>
+    <div class="zuid">Zuid</div>
+    <div class="west">West</div>
+</body>
+</html>
